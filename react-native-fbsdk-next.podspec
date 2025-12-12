@@ -31,4 +31,8 @@ Pod::Spec.new do |s|
     ss.dependency     'FBSDKGamingServicesKit', "~> #{FBSDKVersion}"
     ss.source_files = 'ios/RCTFBSDK/share/*.{h,m}'
   end
+
+  s.subspec "FBSDKFixedAdapter" do |ss|
+    ss.source_files = "ios/FBSDKFixedAdapter/**/*.{h,swift}"
+  end
 end
